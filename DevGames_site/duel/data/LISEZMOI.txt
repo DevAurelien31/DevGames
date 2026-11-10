@@ -1,4 +1,0 @@
-Mettre à jour le jeu sans réinstaller l'appli :
-1. Modifier bundle.json (unités, rules, puzzles).
-2. Augmenter "version" (ex. 2026.11.10-1). Les joueurs le reçoivent au prochain lancement.
-Ne jamais retirer une fiche d'unité : le fichier serait refusé.
