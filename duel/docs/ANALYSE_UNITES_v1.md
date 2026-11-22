@@ -204,7 +204,7 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 
 ## Avis global
 
-- **Verdict en une phrase** : Le concept est solide et mérite d'être figé SI quatre points sont levés : l'avantage du premier joueur (56 % en simulation), le mana qui ne limite pas vraiment le jeu, les 4 unités/Rois nettement faibles (Stratège 37,5 %, Messager 40 %, Économiste 46 %, Invocateur 47 %) et le risque de blocage défensif. Le jeu n'est ni trop simple ni lassant sur le papier, mais deux inconnues décisives restent à mesurer avec des humains : la méta de draft et le jeu défensif.
+- **Verdict en une phrase** : Le concept est solide et mérite d'être figé SI quatre points sont levés : l'avantage du premier joueur (56 % en simulation), le rôle réel du mana (peut-être peu contraignant, à confirmer), les 4 unités/Rois nettement faibles (Stratège 37,5 %, Messager 40 %, Économiste 46 %, Invocateur 47 %) et le risque de blocage défensif. Le jeu n'est ni trop simple ni lassant sur le papier, mais deux inconnues décisives restent à mesurer avec des humains : la méta de draft et le jeu défensif.
 
 - **Ce que sont les chiffres** : 2 200 parties IA contre IA (IA de recherche S2, draft aléatoire, placement guidé, règles actuelles). Chaque unité apparaît dans ≈1 000 parties : incertitude ±1,6 point (95 %). Les chiffres mesurent la force dans le jeu d'une IA qui joue à profondeur limitée : ils sont utiles pour classer, pas pour trancher des cas proches (±3 points).
 
@@ -262,7 +262,7 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 
 - **Rendement** : « Victoires (sim.) % » = part des parties gagnées par l'équipe qui a cette unité (ou ce Roi). « Compétences/partie » = lancers par partie où l'unité joue. Verdict : ≥ 54 % fort, 48-54 % équilibré, 44-48 % faible, < 44 % très faible. Incertitude ±1,6 pt (unités) / ±3,3 pts (Roi vs Roi, ≈ 170 parties par case).
 
-- **Résultats globaux** : J1 56,1 % / J2 43,8 % / nuls 0,1 % ; 10,2 tours par joueur en moyenne (médiane ≈ 9) ; 106 actions par partie ; 2,45 touches de Roi par partie ; ≈ 7,1 mana perdus par partie ; fin par Roi vaincu 99,4 %.
+- **Résultats globaux** : J1 56,1 % / J2 43,8 % / nuls 0,1 % ; 10,2 tours par joueur en moyenne (médiane ≈ 9) ; 106 actions par partie ; 2,45 touches de Roi par partie ; ≈ 7,1 mana perdus par partie par débordement du plafond (≠ mana inutilisé : ≈ 4 mana restent en fin de tour) ; fin par Roi vaincu 99,4 %.
 
 - **Rois** : Cataclysmique 56,7 % ; Indomptable 56,1 % ; Diplomate 53,6 % ; Économiste 46,3 % ; Stratège 37,5 %.
 
