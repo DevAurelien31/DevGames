@@ -44,7 +44,7 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 - **Compétence** : Passif : +4 mana par tour. Compétence (1 fois par partie, coût 1) : tous vos alliés gagnent +1 déplacement ce tour.
 - **Coût** 1 · portée Globale · cooldown Non · passif Non · usage unique Oui
 - **Rendement** : 37.5 % de victoires (920 parties), 1 compétence(s) par partie → **Très faible**
-- **Remarque** : Le plus faible (37,5 %). Double défaut : (1) +4 mana/tour est quasi inutile car le mana n'est pas la ressource limitante (≈7 mana perdus par partie) ; (2) « +1 déplacement » pénalise celui qui approche : il est frappé le premier. La compétence usage unique à coût 1 est correcte mais insuffisante.
+- **Remarque** : Le plus faible (37,5 %). Double défaut : (1) +4 mana/tour est quasi inutile car le mana semble peu limitant (en moyenne ≈ 4 mana restent inutilisés en fin de tour ; hypothèse à confirmer) ; (2) « +1 déplacement » pénalise celui qui approche : il est frappé le premier. La compétence usage unique à coût 1 est correcte mais insuffisante.
 - **Idée de modification** : Remplacer le passif : « Marche forcée » = +1 déplacement ET immunité aux immobilisations jusqu'au tour adverse suivant (tour de rush sûr). Variante : à la place du mana, les unités alliées entrent en jeu avec 1 déplacement supplémentaire au 1er tour. À tester par simulation (cible 47-52 %).
 - **Utilité** : Roi « tempo » : prépare un tour d'assaut coordonné. Aujourd'hui trop dépendant du bon timing et du mana superflu.
 - **5 noms** : Tacticien · Général · Maréchal · Capitaine · Conquérant
@@ -143,7 +143,7 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 - **Compétence** : Gagne 2 mana (coût 1, donc +1 net). Recharge : 1 tour sur 2.
 - **Coût** 1 · portée Globale · cooldown Oui · passif Non · usage unique Non
 - **Rendement** : 47.2 % de victoires (992 parties), 4.36 compétence(s) par partie → **Faible**
-- **Remarque** : 47,2 %, trop lancé par l'IA (4,4/partie) pour un gain net de +1 mana. Le mana n'étant pas la ressource limitante, +1 mana est faible. Il manque une identité compétitive.
+- **Remarque** : 47,2 %, trop lancé par l'IA (4,4/partie) pour un gain net de +1 mana. Si le mana est peu limitant (hypothèse à confirmer), +1 mana est faible. Il manque une identité compétitive.
 - **Idée de modification** : Transformer en soutien d'action : coût 1, un allié choisi attaque gratuitement ce tour, ou gagne +1 déplacement au prochain tour. À tester.
 - **Utilité** : Support d'économie : permet des tours à 3 compétences si le Roi Économiste est là.
 - **5 noms** : Invocateur · Catalyseur · Mystique · Source · Médium
@@ -226,7 +226,7 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 - **Trop lassant ?** : Risque réel dans la 1re moitié : la 1re touche sur un Roi arrive en moyenne au tour 8,5 pour une partie médiane de 9 tours. Pendant ≈ 7 tours, rien n'est « touché » : les joueurs se positionnent. Pour garder la tension : (1) rendre visibles les menaces (cases attaquables au tour suivant) dans l'interface ; (2) envisager un rythme plus rapide (placement initial plus avancé, ou un déplacement supplémentaire le 1er tour) à tester ; (3) garder la limite de tour pour éviter le blocage.
 
 - **Axes d'amélioration prioritaires** : 1) Ramener J1 à ≈ 53-54 % : jeton de J2 à 3 mana (54,5 % mesuré avant), ou parties classées par paires avec côtés inversés (supprime le biais en classé).
-2) Rendre le mana contraignant : ≈ 7 mana perdus par partie, donc +3/tour plafonné à 6 est trop généreux. Tests : +2 mana et plafond 5, ou coûts +1 sur les compétences de contrôle.
+2) Vérifier si le mana est assez contraignant : en moyenne ≈ 4 mana restent inutilisés en fin de tour (64 % des tours ≥ 3), mais 28 % des tours ont une action bloquée par le mana. Image mitigée : tester +2/tour et plafond 5 avant de conclure.
 3) Refaire Stratège, Messager, Économiste, Invocateur (voir feuille Unités). Le défaut commun : leur effet est du « mana » ou « +1 déplacement », deux effets faibles dans ce jeu.
 4) Valider avec des humains les unités défensives sous-utilisées par l'IA (Provocateur, Mur de Glace, Anti-CC).
 5) Ajouter de la télémétrie anonyme (draft, placement, résultat) pour calibrer sans dépendre de l'IA.
@@ -238,11 +238,11 @@ Source : 2 200 parties IA S2 contre S2 (règles actuelles). Version tableur : `d
 
 - **Avantage du premier joueur** : 56,1 % en simulation (2 200 parties, ±2,1). Équité faible pour un jeu « ultra compétitif ». — Jeton J2 à 3 mana ; classé en 2 manches côtés inversés ; mesurer avec humains (200 parties).
 
-- **Mana non contraignant** : ≈ 7 mana perdus par partie ; mana jamais limitant, d'où des unités « mana » faibles (Stratège, Économiste, Invocateur). — Plafond 5 / +2 par tour ; coûts +1 ; mesurer mana perdu et victoires des unités concernées.
+- **Mana : contrainte réelle ?** : mesuré (120 parties IA) ≈ 4 mana inutilisés en fin de tour ; 64 % des tours finissent avec ≥ 3 mana ; 28 % des tours ont une action bloquée par le mana. Les unités « mana » sous-performent, mais la cause (mana peu utile ou jeu de l'IA) n'est pas prouvée. — Faire varier plafond/régénération et comparer victoires et mana inutilisé ; confirmer avec des humains.
 
 - **Camping / blocage défensif** : Le jeu n'a pas de capture : on peut seulement gêner. Les tests anciens avec un bot « tortue » montraient des fins par limite de tours (36 % entre tortues). — Simuler S2/S3 contre une IA tortue forte ; durée médiane, nuls, taux de limite de tours (actuellement 0,2 % en miroir).
 
-- **Contres durs entre Rois** : Matrice mesurée : Indomptable bat Stratège 74 % ; Cataclysmique bat Stratège 67 %, Économiste 60 % ; Stratège perd contre tous (25-41 %). — Après refonte de Stratège/Économiste, refaire la matrice 5×5 (≥ 150 parties par case) : objectif toutes les cases entre 40 et 60 %.
+- **Déséquilibre entre Rois (pas de contre-pick possible : choix simultané)** : les Rois sont choisis en même temps (doublons possibles), donc c'est un problème d'équilibre global. Matrice mesurée : Indomptable bat Stratège 74 % ; Cataclysmique bat Stratège 67 %, Économiste 60 % ; Stratège perd contre tous (25-41 %). — Après refonte de Stratège/Économiste, refaire la matrice 5×5 (≥ 150 parties par case) : objectif toutes les cases entre 40 et 60 %.
 
 - **Biais de l'IA sur certaines unités** : Mur de Glace 7,6 lancers/partie, Anti-CC 5,1, Invocateur 4,4 mais Provocateur 0,27 : l'IA ne joue pas comme un humain. — Télémétrie en ligne + parties de test avec joueurs ; comparer taux de pick, de bans et de victoire.
 
