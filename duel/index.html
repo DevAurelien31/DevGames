@@ -428,6 +428,14 @@ button{font:inherit;color:inherit;cursor:pointer}
 /* jauge du tour : coupée avant le bouton ☰, 60 s centré sous « Tour / chrono » ; le bouton occupe les deux lignes */
 .play .gbar .gcd{grid-column:1/4}
 .play .gbar .gear{grid-row:1/3;grid-column:4;height:auto;align-self:stretch;width:42px;font-size:1.3rem}
+
+/* pseudo de 12 caractères entier : centre compact, colonnes de noms souples */
+.play .gbar{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto;gap:3px 5px}
+.play .gbar .gp b{font-size:.84rem;letter-spacing:-.015em}
+.play .gbar .gc{font-size:.74rem}
+.gbar .gl{gap:4px}
+.gbar .sc{min-width:19px;height:19px;padding:0 4px;font-size:.74rem;border-width:1.5px}
+.play .gbar .gear{width:36px}
 </style>
 </head>
 <body>
