@@ -21,7 +21,7 @@
     "passif": false,
     "portee": "Globale",
     "cible": "Tous les alliés",
-    "effet": "Compétence (1 fois par partie, coût 2) : tous vos alliés, Roi compris, gagnent +1 déplacement ce tour."
+    "effet": "Donne +1 déplacement ce tour à tous vos alliés, Roi compris. 1 usage par partie."
   },
   {
     "id": "roi_economiste",
@@ -33,7 +33,7 @@
     "passif": true,
     "portee": "Globale",
     "cible": "Équipe",
-    "effet": "Passif : réserve de mana de 7 ; +4 mana un tour sur deux, +3 les autres tours."
+    "effet": "Passif : réserve de mana de 7 ; +4 mana un tour sur deux, +3 mana les autres tours."
   },
   {
     "id": "roi_cataclysmique",
@@ -45,7 +45,7 @@
     "passif": false,
     "portee": "Globale",
     "cible": "Tous les ennemis non-rois",
-    "effet": "1 fois par partie : immobilise tous les ennemis (sauf le Roi)."
+    "effet": "Immobilise tous les ennemis (sauf le Roi). 1 usage par partie."
   },
   {
     "id": "roi_diplomate",
@@ -105,7 +105,7 @@
     "passif": false,
     "portee": "2 cases (carré 5×5)",
     "cible": "Tous les ennemis à portée",
-    "effet": "Attire d'une case vers lui tous les ennemis situés à 2 cases (carré 5×5, diagonales et « L » compris). Pour un « L », vous choisissez la case d'arrivée parmi les cases libres adjacentes à lui. Recharge : 1 tour sur 2."
+    "effet": "Attire d'une case vers lui tous les ennemis situés à portée 2 (carré 5×5, diagonales et « L » compris). Pour un « L », vous choisissez la case d'arrivée parmi les cases libres adjacentes à lui. Recharge : 1 tour sur 2."
   },
   {
     "id": "mur_de_glace",
@@ -117,7 +117,7 @@
     "passif": false,
     "portee": "2 cases (carré 5×5)",
     "cible": "Case libre",
-    "effet": "Pose un mur sur une case libre du carré 5×5 autour de lui (portée 2, diagonales comprises). Il bloque le passage et la vue, et disparaît au début de votre 2e tour suivant."
+    "effet": "Pose un mur sur une case libre du carré 5×5 autour de lui (portée 2, diagonales comprises). Le mur bloque le passage et la vue, et disparaît au début de votre 2e tour suivant."
   },
   {
     "id": "trappeur",
@@ -153,7 +153,7 @@
     "passif": false,
     "portee": "2 cases (ligne de vue)",
     "cible": "1 ennemi + 1 rebond",
-    "effet": "Immobilise un ennemi à portée 2 en ligne (8 directions, ligne de vue), et un second ennemi adjacent au premier."
+    "effet": "Immobilise un ennemi à portée 2 en ligne (8 directions, ligne de vue) et un second ennemi adjacent au premier."
   },
   {
     "id": "gardien_du_roi",
@@ -165,7 +165,7 @@
     "passif": false,
     "portee": "Globale",
     "cible": "Le Roi allié",
-    "effet": "1 fois par partie : votre Roi regagne 1 PV."
+    "effet": "Rend 1 PV à votre Roi. 1 usage par partie."
   },
   {
     "id": "purificateur",
@@ -189,7 +189,7 @@
     "passif": false,
     "portee": "Globale",
     "cible": "Équipe",
-    "effet": "Gagne 2 mana (coût 1, donc +1 net). Recharge : 1 tour sur 2."
+    "effet": "Gagne 2 mana (coût 1, soit +1 net). Recharge : 1 tour sur 2."
   },
   {
     "id": "anti_cc",
@@ -201,7 +201,7 @@
     "passif": false,
     "portee": "1 case",
     "cible": "Lui-même et alliés adjacents",
-    "effet": "Lui-même et ses alliés adjacents ne peuvent être ni immobilisés ni déplacés pendant le prochain tour adverse. Recharge : 1 tour sur 2."
+    "effet": "Protège lui-même et ses alliés adjacents : ils ne peuvent être ni immobilisés ni déplacés pendant le prochain tour adverse. Recharge : 1 tour sur 2."
   },
   {
     "id": "messager",
@@ -213,7 +213,7 @@
     "passif": false,
     "portee": "Globale",
     "cible": "1 allié",
-    "effet": "Un allié de votre choix (où qu'il soit) gagne +1 déplacement ce tour."
+    "effet": "Donne +1 déplacement ce tour à un allié de votre choix (où qu'il soit)."
   },
   {
     "id": "sprinteur",
@@ -225,7 +225,7 @@
     "passif": true,
     "portee": "2 cases en ligne droite",
     "cible": "Soi-même",
-    "effet": "Passif : avance de 2 cases en ligne droite (sans traverser de pièce) un tour sur 3 ; les autres tours, 1 case."
+    "effet": "Passif : avance de 2 cases en ligne droite (sans traverser de pièce) un tour sur 3, et de 1 case les autres tours."
   },
   {
     "id": "sauteur",
@@ -249,7 +249,7 @@
     "passif": false,
     "portee": "Soi-même",
     "cible": "Soi-même",
-    "effet": "Ne peut pas être ciblé par l'adversaire pendant son prochain tour. Recharge : 1 tour sur 2."
+    "effet": "Devient impossible à cibler par l'adversaire pendant son prochain tour. Recharge : 1 tour sur 2."
   },
   {
     "id": "illusionniste",
