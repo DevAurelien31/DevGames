@@ -113,11 +113,11 @@
     "categorie": "Mage",
     "cout": 2,
     "once": false,
-    "cooldown": false,
+    "cooldown": true,
     "passif": false,
     "portee": "2 cases (carré 5×5)",
     "cible": "Case libre",
-    "effet": "Pose un mur sur une case libre du carré 5×5 autour de lui (portée 2, diagonales comprises). Le mur bloque le passage et la vue, et disparaît au début de votre 2e tour suivant."
+    "effet": "Pose un mur sur une case libre du carré 5×5 autour de lui (portée 2, diagonales comprises). Le mur bloque le passage et la vue, et disparaît au début de votre 2e tour suivant. Recharge : 1 tour sur 2."
   },
   {
     "id": "trappeur",
@@ -125,11 +125,11 @@
     "categorie": "Mage",
     "cout": 2,
     "once": false,
-    "cooldown": false,
+    "cooldown": true,
     "passif": false,
     "portee": "2 cases (carré 5×5)",
     "cible": "2 cases libres non adjacentes entre elles",
-    "effet": "Pose 2 pièges sur des cases libres du carré 5×5 autour de lui (portée 2, diagonales comprises). Une pièce qui entre sur un piège est immobilisée. Un nouveau lancer retire les anciens pièges."
+    "effet": "Pose 2 pièges sur des cases libres du carré 5×5 autour de lui (portée 2, diagonales comprises). Une pièce qui entre sur un piège est immobilisée. Un nouveau lancer retire les anciens pièges. Recharge : 1 tour sur 2."
   },
   {
     "id": "telekinesiste",
